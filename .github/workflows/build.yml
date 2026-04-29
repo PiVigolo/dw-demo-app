@@ -14,3 +14,6 @@ jobs:
           distribution: 'temurin'
           java-version: '8'
           cache: 'maven'
+      - name: Run tests
+        run: mvn -B test --file pom.xml
+
